@@ -22,6 +22,7 @@
     <Compile Include="home.php" />
     <Compile Include="imports.php" />
     <Compile Include="index.php" />
+    <Compile Include="info.php" />
     <Compile Include="registration.php" />
     <Compile Include="functions.php" />
   </ItemGroup>
