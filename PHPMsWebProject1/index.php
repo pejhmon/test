@@ -1,12 +1,12 @@
 <?php 
     $Message = '';
-    require_once 'dbconnection.php'; 
+    require_once '/dbconnection.php'; 
 ?>
 
 <html>
     <head>
         <title>Test</title>
-        <?php include 'imports.php'; ?>
+        <?php include '/imports.php'; ?>
     </head>
 
 <?php
@@ -27,7 +27,7 @@ if (isset ( $_POST ['submit'] )) {
 				</div>";
         }else{
             $_SESSION['username'] = $Username;
-            redirect ('home.php');
+            redirect ('/home.php');
         }
     }
 }
@@ -42,7 +42,7 @@ if (isset ( $_POST ['submit'] )) {
                 <h1>Test app login page</h1>
                 <br />
                 <br />
-                <form method="post" action="index.php">
+                <form method="post" action="/index.php">
                     <h2 class="form-signin-heading">Please sign in</h2>
                     <label for="username" class="sr-only">Username</label>
                     <input type="text" name="username" class="form-control" placeholder="Username" required autofocus>
@@ -55,7 +55,7 @@ if (isset ( $_POST ['submit'] )) {
                     </div>
                     <button class="btn btn-lg btn-primary btn-block" type="submit" name="submit">Sign in</button>
                 </form>
-                <a href="registration.php">Register account</a>
+                <a href="/registration.php">Register account</a>
 
             </div>
         </div>
